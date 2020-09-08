@@ -19,5 +19,4 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
-          branch: "pre"
           title: "Update Pre with changes from Main"
