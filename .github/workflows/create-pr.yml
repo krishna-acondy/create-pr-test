@@ -16,7 +16,7 @@ jobs:
           ref: main
 
       - name: Create Pull Request
-        uses: gha-utilities/init-pull-request@v0.1.9
+        uses: gha-utilities/init-pull-request@v0.1.0
         with:
           head: main
           base: pre
