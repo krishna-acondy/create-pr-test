@@ -13,11 +13,11 @@ jobs:
       - name: Checkout Main
         uses: actions/checkout@v2
         with:
-          ref: "main"
+          ref: main
 
       - name: Create Pull Request
         uses: gha-utilities/init-pull-request@v0.1.9
         with:
-          head: "main"
-          base: "pre"
-          title: "Update Pre with changes from Main"
+          head: main
+          base: pre
+          title: Update Pre with changes from Main
