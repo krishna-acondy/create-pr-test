@@ -18,6 +18,7 @@ jobs:
       - name: Create Pull Request
         uses: gha-utilities/init-pull-request@v0.1.0
         with:
+          pull_request_token: ${{ secrets.GH_TOKEN }}
           head: main
           base: pre
           title: Update Pre with changes from Main
