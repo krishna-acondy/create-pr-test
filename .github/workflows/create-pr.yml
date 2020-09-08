@@ -1,4 +1,4 @@
-name: Update Pre with Main
+name: Update Pre
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   updatepre:
-    name: Update Pre with changes from Main
+    name: Update pre with changes from main
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Main
@@ -21,4 +21,5 @@ jobs:
           pull_request_token: ${{ secrets.GH_TOKEN }}
           head: main
           base: pre
-          title: Update Pre with changes from Main
+          title: Update pre with changes from main
+          body: Pull latest changes into pre.
