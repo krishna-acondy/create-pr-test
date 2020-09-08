@@ -16,8 +16,8 @@ jobs:
           ref: "main"
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: gha-utilities/init-pull-request@v0.1.9
         with:
+          head: "main"
           base: "pre"
-          branch: "main"
           title: "Update Pre with changes from Main"
